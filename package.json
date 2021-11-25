@@ -32,7 +32,7 @@
         "web-vitals": "^1.0.1"
     },
     "scripts": {
-        "start": "webpack-dev-server --open --config webpack.config.prod.js",
+        "start": "webpack serve --open --config webpack.config.prod.js",
         "build": "webpack --config webpack.config.prod.js",
         "deploy-build": "webpack --config webpack.config.prod.js --env.baseHref=/admin-template-for-react/",
         "format": "prettier --write ./src/**",
@@ -93,7 +93,7 @@
         "url-loader": "^4.1.1",
         "webpack": "^5.61.0",
         "webpack-cli": "^4.9.1",
-        "webpack-dev-server": "3.7.1",
+        "webpack-dev-server": "^4.5.0",
         "webpack-env": "^0.8.0",
         "webpack-merge": "^5.8.0",
         "webpack-pwa-manifest": "^4.3.0",
