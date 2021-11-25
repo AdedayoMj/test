@@ -32,7 +32,7 @@
         "web-vitals": "^1.0.1"
     },
     "scripts": {
-        "start": "webpack-dev-server --open --config webpack.config.dev.js",
+        "start": "webpack-dev-server --open --config webpack.config.prod.js",
         "build": "webpack --config webpack.config.prod.js",
         "deploy-build": "webpack --config webpack.config.prod.js --env.baseHref=/admin-template-for-react/",
         "format": "prettier --write ./src/**",
