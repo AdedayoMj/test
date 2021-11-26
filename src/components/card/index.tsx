@@ -39,10 +39,11 @@ const useStyles = makeStyles((theme: Theme) => ({
   avartar: {
     height: 60,
     width: 60,
-    marginLeft: 10,
-
+    margin: 10,
     backgroundSize: 'cover !important',
-    backgroundPosition: 'center !important',
+    backgroundPosition: 'top center !important',
+    backgroundOrigin: 'border-box',
+    border: 0,
     [theme.breakpoints.down('xs')]: {
       height: 40,
       width: 40,
@@ -78,7 +79,12 @@ const CustomCard: React.FunctionComponent<ICard> = (props) => {
             className={classes.avartar}
           />
         ) : (
-          <Avatar className={classes.avartar} alt={name} src={url} />
+          <Avatar
+            style={{ justifyContent: 'center', display: 'flex' }}
+            className={classes.avartar}
+            alt={name}
+            src={url}
+          />
         )}
         <Box sx={{ display: 'flex', flexDirection: 'column' }}>
           <CardContent>
